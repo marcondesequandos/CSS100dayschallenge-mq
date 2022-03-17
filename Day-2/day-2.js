@@ -3,9 +3,12 @@ const div = document.querySelectorAll("div")
 
 function toggleClass() {
 
+  menuIcon.classList.toggle('active')
+
   div.forEach((item)=> {
     if (item.className.includes('no-animation')) {
       item.classList.remove('no-animation')
+
     }
 
   })
@@ -13,4 +16,4 @@ function toggleClass() {
   console.log(menuIcon)
 }
 
-menuIcon.addEventListener("click", toggleClass())
+menuIcon.addEventListener("click", toggleClass)

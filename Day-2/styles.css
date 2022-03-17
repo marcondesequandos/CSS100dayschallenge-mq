@@ -7,7 +7,7 @@
   height: 400px;
   margin-top: -200px;
   margin-left: -200px;
-  background: #3FAF82;
+  background: #3faf82;
   border-radius: 2px;
 }
 
@@ -24,7 +24,9 @@
   width: 80px;
   height: 52px;
 }
-.icon .line-1, .icon .line-2, .icon .line-3 {
+.icon .line-1,
+.icon .line-2,
+.icon .line-3 {
   height: 8px;
   width: 100%;
   background-color: #fff;
@@ -38,18 +40,31 @@
 .icon .line-2 {
   animation: animate-line-2-rev 0.7s ease-in-out;
 }
+.icon .line-3 {
+  animation: animate-line-3-rev 0.7s ease-in-out;
+}
 .icon .line-2 {
   margin: 14px 0;
   animation: animate-line-3-rev 0.7s ease-in-out;
 }
+.icon:hover .line-1,
+.icon:hover .line-2,
+.icon:hover .line-3 {
+  background-color: #fff;
+}
+.icon.active .line-1,
+.icon.active .line-2,
+.icon.active .line-3 {
+  background-color: #fff;
+}
 .icon.active .line-1 {
-  animation: animate-line-1 0.7s cubic-bezier(0.3, 1, 0.7, 0.1) forwards;
+  animation: animate-line-1 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
 }
 .icon.active .line-2 {
-  animation: animate-line-2 0.7s cubic-bezier(0.3, 1, 0.7, 0.1) forwards;
+  animation: animate-line-2 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
 }
-.icon.active .line-2 {
-  animation: animate-line-3 0.7s cubic-bezier(0.3, 1, 0.7, 0.1) forwards;
+.icon.active .line-3 {
+  animation: animate-line-3 0.7s cubic-bezier(0.3, 1, 0.7, 1) forwards;
 }
 
 .no-animation {
@@ -61,7 +76,7 @@
     transform: translate3d(0, 0, 0) rotate(0deg);
   }
   50% {
-    transform: translate3d(0, 22px, 0), rotate(0);
+    transform: translate3d(0, 22px, 0) rotate(0deg);
   }
   100% {
     transform: translate3d(0, 22px, 0) rotate(45deg);
@@ -82,7 +97,7 @@
     transform: translate3d(0, 0, 0) rotate(0deg);
   }
   50% {
-    transform: translate3d(0, -22px, 0), rotate(0);
+    transform: translate3d(0, -22px, 0) rotate(0deg);
   }
   100% {
     transform: translate3d(0, -22px, 0) rotate(135deg);
@@ -93,7 +108,7 @@
     transform: translate3d(0, 22px, 0) rotate(45deg);
   }
   50% {
-    transform: translate3d(0, 22px, 0), rotate(0);
+    transform: translate3d(0, 22px, 0) rotate(0);
   }
   100% {
     transform: translate3d(0, 0, 0) rotate(0deg);
@@ -114,7 +129,7 @@
     transform: translate3d(0, -22px, 0) rotate(135deg);
   }
   50% {
-    transform: translate3d(0, -22px, 0), rotate(0);
+    transform: translate3d(0, -22px, 0) rotate(0);
   }
   100% {
     transform: translate3d(0, 0, 0) rotate(0deg);
